@@ -1,3 +1,6 @@
+@color-header: #8b7900;
+@color-slider: #8b7900;
+
 body {
   margin: 0;
   padding: 0;
@@ -45,7 +48,7 @@ li {
   margin: 0;
   padding: 60px 100px;
 
-  background-color: #8b7900;
+  background-color: @color-header;
 }
 
 .logo {
@@ -81,6 +84,7 @@ li {
     margin: 0;
     padding: 10px 15px;
     font-family: 'Raleway', 'Arial', sans-serif;
+    font-weight: 600;
     font-size: 12px;
     line-height: 18px;
     text-transform: uppercase;
@@ -109,5 +113,60 @@ li {
   &__img {
     width: 23px;
     height: 18px;
+  }
+}
+
+/******************/
+/***   SLIDER   ***/
+/******************/
+
+.slider {
+  margin: 0;
+  padding: 100px;
+  padding-top: 120px;
+  padding-right: 460px;
+
+  background-color: @color-slider;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 70px;
+    padding: 0;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 26px;
+    text-transform: none;
+    color: #bababa;
+  }
+
+  &__btn {
+    display: inline-block;
+    margin: 0;
+    padding: 10px 40px;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #fff;
+
+    &:hover {
+      background-color: lighten(@color-slider, 5%);
+    }
   }
 }
