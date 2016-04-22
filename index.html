@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Crafty</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,600&amp;subset=latin,cyrillic">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,700,800&amp;subset=latin,cyrillic">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700,800&amp;subset=latin,cyrillic">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -129,14 +129,21 @@
       </div>
 
       <div class="feedback">
-        <img class="feedback__img" src="img/rocket.png" alt="Feedback" width="72" height="73">
-        <h2 class="feedback__title">Get in touch</h2>
-        <p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam sapien, auctor sed blandit nec, adipiscing eget elit. Duis tempor elementum quam consequat condimentum.</p>
-        <form class="feedback__form">
+        <div class="feedback__header">
+          <div class="feedback__decor  feedback__decor--top"></div>
+          <img class="feedback__img" src="img/rocket.png" alt="Feedback" width="72" height="73">
+          <h2 class="feedback__title">Get in touch</h2>
+          <p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam sapien, auctor sed blandit nec, adipiscing eget elit. Duis tempor elementum quam consequat condimentum.</p>
+          <div class="feedback__decor  feedback__decor--left-large"></div>
+          <div class="feedback__decor  feedback__decor--left-small"></div>
+          <div class="feedback__decor  feedback__decor--right-large"></div>
+          <div class="feedback__decor  feedback__decor--right-small"></div>
+        </div>
+        <form class="feedback__form  clearfix">
           <input class="feedback__input" type="text" placeholder="Your name">
           <input class="feedback__input" type="text" placeholder="Your email">
-          <input class="feedback__input" type="text" placeholder="Your subject">
-          <input class="feedback__input" type="text" placeholder="Your message texts">
+          <input class="feedback__input  feedback__input--last" type="text" placeholder="Subject">
+          <textarea class="feedback__textarea" placeholder="Your message texts"></textarea>
           <input class="feedback__btn" type="submit" value="Click to send">
         </form>
       </div>
